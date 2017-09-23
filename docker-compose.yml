@@ -1,0 +1,15 @@
+nightscout:
+  image: 'nightscout:0.10'
+  environment:
+    - 'API_SECRET=MsYRDHZ92woDvBLVUxyR7n2aXx'
+    - 'MONGO_CONNECTION=mongodb://cgm:XQqqugai3X6D5GAZd87@ds038547.mlab.com:38547/cgm'
+    - 'PORT=1337'
+    - 'DISPLAY_UNITS=mmol'
+    - 'TIME_FORMAT=24'
+    - 'AUTH_DEFAULT_ROLES=readable'
+    - 'ENABLE=basal careportal iob aob bwp rawbg sage iage cage ar2 delta direction upbat timeago devicestatus ar2 simplealarms profile boluscalc pushover'
+    - 'PUSHOVER_API_TOKEN=ao93q2ihizn8r6s34dxq9o56ehei6g'
+    - 'PUSHOVER_USER_KEY=u6s1hezrnmsu8m7dns685sge3f4xr1'
+    - 'BASE_URL=http://vps456507.ovh.net:1337/'
+  ports:
+    - '1337:1337'
